@@ -22,7 +22,7 @@ before_install:
 
 install:
     # install python requirements
-    - pip install --upgrade --editable [tests]
+    - pip install --upgrade --editable .\[tests\]
     - pip install coveralls
 
     # weird travis-ci python paths
