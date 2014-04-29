@@ -49,7 +49,7 @@ before_script:
 
 script:     # run the tests
     #- env PYTHONPATH=. coverage run --source=pyvows  ./pyvows/__main__.py
-    - export PYTHONPATH=".:${PYTHONPATH}" python ./pyvows --cover --cover-package=pyvows --cover-threshold=80.0 --cover-report=pyvows.coverage.xml -x tests/
+    - env PYTHONPATH=".:${PYTHONPATH}" python ./pyvows --cover --cover-package=pyvows --cover-threshold=80.0 --cover-report=pyvows.coverage.xml -x tests/
 
 
 #after_script:
